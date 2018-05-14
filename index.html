@@ -3,133 +3,152 @@
   <head>
     <meta charset="utf-8">
     <title>РВД-Сервис</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <header class="header">
-      <img class="logo" src="#" alt="Логотип РВД-Сервис">
-      <a class="header-registration" href="#">Регистрация</a>
-      <a class="header-login" href="#">Вход</a>
+      <div class="header-top">
+        <img class="header-top__logo logo" src="#" alt="Логотип РВД-Сервис">
+        <a class="header-top__registration" href="#">Регистрация</a>
+        <a class="header-top__login" href="#">Вход</a>
 
-      <a class="contact-link header-phone" href="#">+7(4872)58-40-52</a>              <!--исправил-->
-      <a class="contact-link header-email" href="#">info@rvd-servis.ru</a>
-      <button class="header-callme"  type="button">Перезвонить мне</button>           <!--исправил-->
-      <a class="header-cart" href="#"></a>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link" href="#">Каталог товаров</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">О компании</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">РВД-Сервис</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+        <form class="header-top__search-form search-form" action="" method="get">
+          <div class="search-form__block">
+            <label class="search-form__label" for="search">
+              <span class="search-form__text">Поиск</span>
+              <input class="search-form__search-text" type="text" name="text" id="search">
+            </label>
+          </div>
+
+          <input class="search-form__btn" type="submit" value="">  <!--кнопка в виде лупы-->
+
+        </form>
+
+        <a class="header-top__phone contact-link" href="#">+7(4872)58-40-52</a>
+        <a class="header-top__email contact-link" href="#">info@rvd-servis.ru</a>
+        <button class="header-top__callme"  type="button">Перезвонить мне</button>
+        <a class="header-top__cart" href="#"></a>
+      </div>
+
+      <div class="header-bottom">
+        <nav class="header-bottom__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Каталог товаров</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">О компании</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">РВД-Сервис</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+   </header>
 
     <main class="main">
       <h1 class="visually-hidden">Чем мы занимаемся</h1>
       <div class="banner">
-       <div class="banner-title">Проиводство и ремонт РВД для грузовых автомобилей</div> <!--исправил-->
+       <div class="banner__title">Проиводство и ремонт РВД для грузовых автомобилей</div>
       </div>
 
       <section class="services">
-        <h2 class="services-title">Наши услуги</h2>                                     <!--исправил-->
-          <ul class="services-list">
+        <h2 class="services__title">Наши услуги</h2>
+          <ul class="services__list">
 
-            <li class="services-item">                                                  <!--исправил-->
-              <img class="services-image" src="#" alt="Иконка легковой машины">
-              <h3 class="services-item-title">РВД для легковых автомобилей</h3>
+            <li class="services__item">
+              <img class="services__image" src="#" alt="Иконка легковой машины">
+              <h3 class="services__item-title">РВД для легковых автомобилей</h3>
             </li>
 
-            <li class="services-item">                                                  <!--исправил-->
-              <img class="services-image" src="#" alt="Иконка грузовика">
-              <h3 class="services-item-title">РВД для грузовых автомобилей</h3>
+            <li class="services__item">                                                  <!--исправил-->
+              <img class="services__image" src="#" alt="Иконка грузовика">
+              <h3 class="services__item-title">РВД для грузовых автомобилей</h3>
             </li>
 
-            <li class="services-item">                                                  <!--исправил-->
-              <img class="services-image" src="#" alt="Иконка мойки">
-              <h3 class="services-item-title">РВД для моек высокого давления</h3>
+            <li class="services__item">                                                  <!--исправил-->
+              <img class="services__image" src="#" alt="Иконка мойки">
+              <h3 class="services__item-title">РВД для моек высокого давления</h3>
             </li>
 
-            <li class="services-item">                                                  <!--исправил-->
-              <img class="services-image" src="#" alt="Иконка трактора">
-              <h3 class="services-item-title">РВД для коммунальной техники</h3>
+            <li class="services__item">                                                  <!--исправил-->
+              <img class="services__image" src="#" alt="Иконка трактора">
+              <h3 class="services__item-title">РВД для коммунальной техники</h3>
             </li>
 
-            <li class="services-item">                                                  <!--исправил-->
-              <img class="services-image" src="#" alt="Иконка мойки">
-              <h3 class="services-item-title">РВД для станков и оборудования</h3>
+            <li class="services__item">                                                  <!--исправил-->
+              <img class="services__image" src="#" alt="Иконка мойки">
+              <h3 class="services__item-title">РВД для станков и оборудования</h3>
             </li>
 
-            <li class="services-item">                                                  <!--исправил-->
-              <img class="services-image" src="#" alt="Иконка моечной машины">
-              <h3 class="services-item-title">РВД для каналопромывочных машин</h3>
+            <li class="services__item">                                                  <!--исправил-->
+              <img class="services__image" src="#" alt="Иконка моечной машины">
+              <h3 class="services__item-title">РВД для каналопромывочных машин</h3>
             </li>
           </ul>
-            <div class="services-text">Компания "РВД-Сервис" длительное время успешно занимается производством,  <!--исправил-->
+            <div class="services__text">Компания "РВД-Сервис" длительное время успешно занимается производством,  <!--исправил-->
             а также ремонтом рукавов высокого давления (РВД) и труб высокого давления (ТВД).
            </div>
       </section>
 
       <section class="popular">                                                         <!--исправил-->
-         <h2 class="popular-title">Популярные товары</h2>
-           <ul class="popular-list">
+         <h2 class="popular__title">Популярные товары</h2>
+           <ul class="popular__list">
 
-             <li class="popular-item">                                                  <!--исправил-->
-               <h3 class="popular-item-title">Адаптеры 201,202 (BSP 60°)</h3>
-               <img class="popular-image" src="#" alt="Фото первого адаптера">
-                 <p class="popular-desc">Соединение: внешняя резьба BSPP.</p>
-                 <p class="popular-desc">Тип прямой.</p>
-                 <p class="popular-desc">Уплотнение соединения по конусу 60°</p>
-                 <p class="popular-desc">Соответствие нормам: ISO 8434-6.</p>
-                 <p class="popular-desc">Материал сталь.</p>
+             <li class="popular__item">                                                  <!--исправил-->
+               <h3 class="popular__item-title">Адаптеры 201,202 (BSP 60°)</h3>
+               <img class="popular__image" src="#" alt="Фото первого адаптера">
+                 <p class="popular__desc">Соединение: внешняя резьба BSPP.</p>
+                 <p class="popular__desc">Тип прямой.</p>
+                 <p class="popular__desc">Уплотнение соединения по конусу 60°</p>
+                 <p class="popular__desc">Соответствие нормам: ISO 8434-6.</p>
+                 <p class="popular__desc">Материал сталь.</p>
 
-              <a class="popular-link" href="#">
+              <a class="popular__link" href="#">
                  Подробнее
-                <div class="popular-arrow"></div>
+                <div class="popular__arrow"></div>
                </a>
              </li>
 
-             <li class="popular-item">                                                <!--исправил-->
-               <h3 class="popular-item-title">Героторные гидромоторы BMR</h3>
-               <img class="popular-image" src="#" alt="Фото гидромотора">
-                 <p class="popular-desc">Диапазон рабочих температур: от-30°C до +90°C.</p>
-                 <p class="popular-desc">Вязкость масла: 20-75 сСт.</p>
-                 <p class="popular-desc">Масло в соответствии с: ISO 20/16.</p>
-                 <p class="popular-desc">Пиковая нагрузка допускается не более 0,6 сек. от каждой минуты.</p>
+             <li class="popular__item">                                                <!--исправил-->
+               <h3 class="popular__item-title">Героторные гидромоторы BMR</h3>
+               <img class="popular__image" src="#" alt="Фото гидромотора">
+                 <p class="popular__desc">Диапазон рабочих температур: от-30°C до +90°C.</p>
+                 <p class="popular__desc">Вязкость масла: 20-75 сСт.</p>
+                 <p class="popular__desc">Масло в соответствии с: ISO 20/16.</p>
+                 <p class="popular__desc">Пиковая нагрузка допускается не более 0,6 сек. от каждой минуты.</p>
 
-               <a class="popular-link" href="#">
+               <a class="popular__link" href="#">
                  Подробнее
-                 <div class="popular-arrow"></div>
+                 <div class="popular__arrow"></div>
                </a>
              </li>
 
-             <li class="popular-item">                                                <!--исправил-->
-               <h3 class="popular-item-title">Адаптеры 201,202 (BSP 60°)</h3>
-               <img class="popular-image" src="#" alt="Фото второго адаптера">
+             <li class="popular__item">                                                <!--исправил-->
+               <h3 class="popular__item-title">Адаптеры 201,202 (BSP 60°)</h3>
+               <img class="popular__image" src="#" alt="Фото второго адаптера">
 
-                 <p class="popular-desc">Материал:  <br>корпус-сталь <br>уплотнение-NBR</p>
-                 <p class="popular-desc">Диапазон рабочих температур: <br>от -20°C до +80°С (NBR) <br>от -15°C до +110°C (VITON)</p>
-                 <p class="popular-desc">Резьба: BSPP</p>
+                 <p class="popular__desc">Материал:  <br>корпус-сталь <br>уплотнение-NBR</p>
+                 <p class="popular__desc">Диапазон рабочих температур: <br>от -20°C до +80°С (NBR) <br>от -15°C до +110°C (VITON)</p>
+                 <p class="popular__desc">Резьба: BSPP</p>
 
-               <a class="popular-link" href="#">
+               <a class="popular__link" href="#">
                  Подробнее
-                 <div class="popular-arrow"></div>
+                 <div class="popular__arrow"></div>
                </a>
              </li>
 
-             <li class="popular-item">                                                  <!--исправил-->
-               <h3 class="popular-item-title">Адаптеры 201,202 (BSP 60°)</h3>
-               <img class="popular-image" src="#" alt="Фото первого адаптера">
-                 <p class="popular-desc">Соединение: внешняя резьба BSPP.</p>
-                 <p class="popular-desc">Тип прямой.</p>
-                 <p class="popular-desc">Уплотнение соединения по конусу 60°</p>
-                 <p class="popular-desc">Соответствие нормам: ISO 8434-6.</p>
-                 <p class="popular-desc">Материал сталь.</p>
+             <li class="popular__item">                                                  <!--исправил-->
+               <h3 class="popular__item-title">Адаптеры 201,202 (BSP 60°)</h3>
+               <img class="popular__image" src="#" alt="Фото первого адаптера">
+                 <p class="popular__desc">Соединение: внешняя резьба BSPP.</p>
+                 <p class="popular__desc">Тип прямой.</p>
+                 <p class="popular__desc">Уплотнение соединения по конусу 60°</p>
+                 <p class="popular__desc">Соответствие нормам: ISO 8434-6.</p>
+                 <p class="popular__desc">Материал сталь.</p>
 
-              <a class="popular-link" href="#">
+              <a class="popular__link" href="#">
                  Подробнее
-                <div class="popular-arrow"></div>
+                <div class="popular__arrow"></div>
                </a>
              </li>
            </ul>
@@ -137,9 +156,9 @@
 
       <footer class="footer">
         <img class="logo" src="#" alt="Логотип РВД-Сервис">
-        <ul class="footer-list">
-          <li class="navigation-item"><a class="navigation-link" href="#">О компании</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">Каталог товаров</a></li>
+        <ul class="footer__navigation navigation">
+          <li class="navigation__item"><a class="navigation__link" href="#">О компании</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Каталог товаров</a></li>
           <li class="footer-item"><a class="footer-link" href="#">РВД-Сервис</a></li> <!--другой класс, поскольку в шапке и в подвале на макете выглядят по-разному-->
           <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
