@@ -1,0 +1,21 @@
+@font-face {
+   font-family:
+   src:url();
+}
+
+  .services__list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services__item {
+
+    width: 33.3%;
+  }
+
+  .popular__list {
+    display: flex;
+    justify-content: space-around;
+  }
