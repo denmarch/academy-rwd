@@ -2,6 +2,7 @@
    font-family: Geometria, Arial, sans-serif;
    src: url("..\fonts\geometria.woff2") format(woff2);
    src: url("..\fonts\geometria.woff") format(woff);
+   
 }
 
 .header-top {
