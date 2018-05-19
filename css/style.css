@@ -1,7 +1,20 @@
 @font-face {
-   font-family:
-   src:url();
+   font-family: Geometria, Arial, sans-serif;
+   src: url("..\fonts\geometria.woff2") format(woff2);
+   src: url("..\fonts\geometria.woff") format(woff);
 }
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
 
   .services__list {
 
