@@ -1,9 +1,37 @@
 @font-face {
-   font-family: Geometria, Arial, sans-serif;
+   font-family: "Geometria", Arial, sans-serif;
+   font-style: normal;
+   font-weight: normal;
+
    src: url("..\fonts\geometria.woff2") format(woff2);
    src: url("..\fonts\geometria.woff") format(woff);
-   
 }
+
+@font-face {
+   font-family: "Geometria", Arial, sans-serif;
+   font-style: normal;
+   font-weight: 700;
+
+   src: url("..\fonts\geometria-bold.woff2") format(woff2);
+   src: url("..\fonts\geometria-bold.woff") format(woff);
+}
+
+@font-face {
+   font-family: "Muller", Arial, sans-serif;
+   font-style: normal;
+   font-weight: 700;
+
+   src: url("..\fonts\ofont-ru-muller") format(woff2);
+   src: url("..\fonts\ofont-ru-muller") format(woff);
+}
+
+@media (max-width: 720px) {
+   
+
+}
+
+
+
 
 .header-top {
   display: flex;
