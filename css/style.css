@@ -46,6 +46,30 @@ img {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  display: none;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+  align-items: center;
+}
+
+.logo {
+  width: 230px;
+}
+
+
+.header__callme-btn {
+  border: 0;
+  background-color: transparent;
+
+}
+
+
+
 
 
 
