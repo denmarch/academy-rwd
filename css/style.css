@@ -1,39 +1,66 @@
 @font-face {
-   font-family: "Geometria", Arial, sans-serif;
+   font-family: "Geometria";
    font-style: normal;
    font-weight: normal;
-
-   src: url("..\fonts\geometria.woff2") format(woff2);
-   src: url("..\fonts\geometria.woff") format(woff);
+   src: url("../fonts/geometria.woff2") format("woff2"), url("../fonts/geometria.woff") format("woff");
 }
 
 @font-face {
-   font-family: "Geometria", Arial, sans-serif;
+   font-family: "Geometria";
    font-style: normal;
    font-weight: 700;
-
-   src: url("..\fonts\geometria-bold.woff2") format(woff2);
-   src: url("..\fonts\geometria-bold.woff") format(woff);
+   src: url("../fonts/geometria-bold.woff2") format("woff2"), url("../fonts/geometria-bold.woff") format("woff");
 }
 
 @font-face {
-   font-family: "Muller", Arial, sans-serif;
+   font-family: "Muller";
    font-style: normal;
    font-weight: 700;
-
-   src: url("..\fonts\ofont-ru-muller") format(woff2);
-   src: url("..\fonts\ofont-ru-muller") format(woff);
+   src: url("../fonts/ofont-ru-muller.woff2") format("woff2"), url("../fonts/ofont-ru-muller.woff") format("woff");
 }
 
-@media (max-width: 720px) {
-   
+@font-face {
+   font-family: "Muller";
+   font-style: normal;
+   font-weight: normal;
+   src: url("../fonts/ofont-ru-muller.woff2") format("woff2"), url("../fonts/ofont-ru-muller.woff") format("woff");
+}
 
+body {
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1645px;
+  margin: 0 auto;
 }
 
 
 
 
-.header-top {
+
+
+
+/*@media (max-width: 720px) {
+
+
+}*/
+
+
+
+
+/*.header-top {
   display: flex;
   justify-content: space-between;
 }
@@ -60,4 +87,79 @@
   .popular__list {
     display: flex;
     justify-content: space-around;
+  }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*.visually-hidden {
+    display: none;
   }
+
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+  }
+
+  .logo {
+    width: 230px;
+  }
+
+  .header__username {
+    display: flex;
+  }
+
+  .greytext {
+    padding: 0 20px;
+    font-family: "Geometria", "Arial", sans-serif;
+    font-size: 14px;
+    color: #8d8d8d;
+    text-decoration: none;
+  }*/
+
+  /*.greytext--line::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 18px;
+    background-color: #bf0000;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .greytext--icon::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+    background-image: url("../images/entrance.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .navigation__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }*/
