@@ -44,6 +44,7 @@ img {
 .container {
   width: 1645px;
   margin: 0 auto;
+  padding: 0 137px;
 }
 
 .visually-hidden {
@@ -53,20 +54,77 @@ img {
 .header__top {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 35px 0;
   align-items: center;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 .logo {
   width: 230px;
 }
 
+.header__username {
+  display: flex;
+}
+
+.greytext {
+  padding: 0 20px;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-size: 14px;
+  color: #8d8d8d;
+  text-decoration: none;
+  }
+
+.greytext--line::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 18px;
+  background-color: #bf0000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.greytext--icon::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  background-image: url("../images/entrance.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__feedback {
+  display: flex;
+}
 
 .header__callme-btn {
   border: 0;
   background-color: transparent;
-
+  text-decoration: underline;
 }
+
+.greytext--img-phone::before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  background-image: url("../images/phone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
 
 
 
