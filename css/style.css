@@ -123,6 +123,96 @@ img {
   background-position: center;
 }
 
+.search-form {
+  padding-left: 120px;
+
+}
+
+.search-form__search-text {     /*не сделано*/
+  width: 147px;
+  border: 0;
+  list-style: none;
+  color: grey;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: #9f9f9f;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.search-form__btn {
+  border: 0;
+  background-color: transparent;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -5px;
+  left: 85px;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.navigation__item {
+  list-style: none;
+}
+
+.navigation__link {
+  font-family: "Geometria", "Arial", sans-serif;;
+  font-size: 18px;
+  color: #13151b;
+  text-decoration: none;
+}
+
+.navigation__link--lines {
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #bf0000;
+  border-bottom: 1px solid #bf0000;
+}
+
+
+.banner {           /*снять параметры с макета доделать*/
+  content: "";
+  display: block;
+  width: 1920px;
+  height: 802px;
+  position: absolute;
+  background: url("../images/banner_big.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__title {        /*снять параметры с макета доделать*/
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 260px;
+  width: ;
+  height:;
+  padding: px;
+  font-family: ;
+  font-size: ;
+  color: ;
+}
+
+
 
 
 
