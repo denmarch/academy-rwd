@@ -44,7 +44,7 @@ img {
 .container {
   width: 1645px;
   margin: 0 auto;
-  padding: 0 140px;
+  padding: 0 140px;           /*????????????????????*/
 }
 
 .visually-hidden {
@@ -124,8 +124,7 @@ img {
 }
 
 .search-form {
-  padding-left: 120px;
-
+  padding-left: 120px;          /*!!!!!!!?????????*/
 }
 
 .search-form__search-text {
@@ -250,7 +249,7 @@ img {
 }
 
 
-.banner {
+.banner {                               /*не сделано*/
   display: flex;
   content: "";
   display: block;
@@ -262,14 +261,10 @@ img {
   background-position: center;
 }
 
-.banner__title {
+.banner__title {                              /*не сделано*/
   font-family: "Muller", "Arial", sans-serif;
   font-size: 60px;
   color: #ffffff;
-  text-align: left;
-
-  align-items: center;
-
 
   width: px;
   height:;
@@ -277,6 +272,48 @@ img {
   font-family: ;
   font-size: ;
   color: ;
+}
+
+.services__title {
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 36px;
+  color: #bf0000;
+  height: 183px;
+  line-height: 92px;
+}
+
+.container--big {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 0 px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services__item {
+  list-style: none;
+  width: 33.3%;
+  height: 315px;
+}
+
+.services__item:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+
+.services__item:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+
+
+.services__icon {
+  display: block;
+  width: px;
+  height: px;
 }
 
 
