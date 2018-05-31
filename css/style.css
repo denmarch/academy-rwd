@@ -44,7 +44,7 @@ img {
 .container {
   width: 1645px;
   margin: 0 auto;
-  padding: 0 137px;
+  padding: 0 140px;
 }
 
 .visually-hidden {
@@ -128,12 +128,10 @@ img {
 
 }
 
-.search-form__search-text {     /*не сделано*/
+.search-form__search-text {
   width: 147px;
   border: 0;
   list-style: none;
-  color: grey;
-  text-decoration: underline;
 }
 
 ::-webkit-input-placeholder {
@@ -172,11 +170,24 @@ img {
 }
 
 .navigation__link {
-  font-family: "Geometria", "Arial", sans-serif;;
+  font-family: "Geometria", "Arial", sans-serif;
   font-size: 18px;
   color: #13151b;
   text-decoration: none;
 }
+
+.navigation__link--arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  right: -25px;
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(45deg);
+  }
 
 .navigation__link--lines {
   padding: 10px;
@@ -185,26 +196,82 @@ img {
   border-bottom: 1px solid #bf0000;
 }
 
-
-.banner {           /*снять параметры с макета доделать*/
+.navigation__link--lines::after {
   content: "";
   display: block;
-  width: 1920px;
-  height: 802px;
   position: absolute;
+  top: 19px;
+  right: -25px;
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(-45deg);
+}
+
+.header__cart {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-image: url("../images/cart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  list-style: none;
+}
+
+.header__cart::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/cart_ellipse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__cart-link {
+  font-style: "Geometria", "Arial", sans-serif;
+  font-size: 12px;
+  color: #fbf4f4;
+  text-decoration: none;
+}
+
+.header__number {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: -40px;
+  z-index: 1;
+}
+
+
+.banner {
+  display: flex;
+  content: "";
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 802px;
   background: url("../images/banner_big.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.banner__title {        /*снять параметры с макета доделать*/
+.banner__title {
   font-family: "Muller", "Arial", sans-serif;
   font-size: 60px;
   color: #ffffff;
-  text-decoration: none;
+  text-align: left;
 
-  padding: 260px;
-  width: ;
+  align-items: center;
+
+
+  width: px;
   height:;
   padding: px;
   font-family: ;
