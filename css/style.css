@@ -62,7 +62,7 @@ img {
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding: 35px 0;
+  padding: 30px 0;
   align-items: center;
   border-bottom: 1px solid #d1d1d1;
 }
@@ -184,13 +184,13 @@ img {
 
 .header__number {
   display: block;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 6px;
   right: -6px;
   z-index: 1;
   background-color: #bf0000;
-  width: 20px;
-  height: 20px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -202,7 +202,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 35px 0;
+  padding: 30px 0;
 }
 
 .navigation__item {
@@ -229,24 +229,24 @@ img {
 .navigation__link--arrow:hover::after {
   content: "";
   display: block;
+  width: 5px;
+  height: 5px;
   position: absolute;
   top: 9px;
   right: -25px;
-  width: 5px;
-  height: 5px;
   border-right: 1px solid #000000;
   border-bottom: 1px solid #000000;
   transform: rotate(45deg);
-  }
+}
 
 .navigation__link--arrowright:hover::after {
   content: "";
   display: block;
+  width: 5px;
+  height: 5px;
   position: absolute;
   top: 19px;
   right: -20px;
-  width: 5px;
-  height: 5px;
   border-right: 1px solid #000000;
   border-bottom: 1px solid #000000;
   transform: rotate(-45deg);
@@ -305,7 +305,6 @@ img {
 .services__item-title {
   display: flex;
   align-items: center;
-  font-family: "Muller", "Arial", sans-serif;
   font-size: 24px;
   color: #000000;
 }
@@ -328,7 +327,6 @@ img {
 
 .popular__title {
   margin: 80px 0;
-  font-family: "Muller", "Arial", sans-serif;
   font-size: 36px;
   color: #bf0000;
 }
@@ -454,10 +452,6 @@ img {
   padding: 0;
 }
 
-.footer__bottom {
-  margin: 0;
-}
-
 .footer__info {
   display: flex;
   justify-content: space-between;
@@ -475,8 +469,6 @@ img {
   top: 0;
   right: -136px;
   background-color: #e8e8e8;
-  background-position: center;
-  background-size: cover;
   z-index: -1;
 }
 
@@ -524,123 +516,3 @@ min-height: 41px;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-
-
-
-
-
-
-
-/*@media (max-width: 720px) {
-
-
-}*/
-
-
-
-
-/*.header-top {
-  display: flex;
-  justify-content: space-between;
-}
-.navigation__list {
-  display: flex;
-  justify-content: space-around;
-}
-
-
-
-
-  .services__list {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .services__item {
-
-    width: 33.3%;
-  }
-
-  .popular__list {
-    display: flex;
-    justify-content: space-around;
-  }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*.visually-hidden {
-    display: none;
-  }
-
-  .header__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 35px 0;
-  }
-
-  .logo {
-    width: 230px;
-  }
-
-  .header__username {
-    display: flex;
-  }
-
-  .greytext {
-    padding: 0 20px;
-    font-family: "Geometria", "Arial", sans-serif;
-    font-size: 14px;
-    color: #8d8d8d;
-    text-decoration: none;
-  }*/
-
-  /*.greytext--line::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 18px;
-    background-color: #bf0000;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .greytext--icon::after {
-    content: "";
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: -10px;
-    right: -25px;
-    background-image: url("../images/entrance.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .navigation__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }*/
