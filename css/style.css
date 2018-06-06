@@ -62,7 +62,6 @@ img {
 .header__top {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   padding: 35px 0;
   align-items: center;
   border-bottom: 1px solid #d1d1d1;
@@ -93,7 +92,7 @@ img {
   background-color: #bf0000;
   position: absolute;
   top: 0;
-  right: -3px;
+  right: -1px;
 }
 
 .greytext--icon::after {
@@ -103,7 +102,7 @@ img {
   height: 35px;
   position: absolute;
   top: -10px;
-  right: -25px;
+  right: -29px;
   background-image: url("../images/entrance.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -116,7 +115,7 @@ img {
   height: 35px;
   position: absolute;
   top: -10px;
-  left: -20px;
+  left: -23px;
   background-image: url("../images/phone.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -135,13 +134,16 @@ img {
 }
 
 .search-form {
-  padding-left: 120px;          /*!!!!!!!?????????*/
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .search-form__search-text {
   width: 147px;
   border: 0;
   list-style: none;
+  padding-left: 17px;
 }
 
 ::placeholder {
@@ -154,14 +156,13 @@ img {
 }
 
 .search-form__btn {
-  border: 0;
-  background-color: transparent;
   display: block;
   width: 30px;
   height: 30px;
-  position: absolute;
-  top: -5px;
-  left: 85px;
+  border: 0;
+  background-color: transparent;
+  top: -2px;
+  left: 7px;
   background-image: url("../images/search.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -254,7 +255,6 @@ img {
 .banner {
   display: flex;
   align-items: center;
-  padding: 0;
   width: 1920px;
   min-height: 802px;
   background: url("../images/banner_big.jpg");
@@ -263,7 +263,6 @@ img {
 }
 
 .banner__title {
-  font-family: "Muller", "Arial", sans-serif;
   font-size: 60px;
   color: #ffffff;
   width: 872px;
@@ -275,7 +274,7 @@ img {
   font-family: "Muller", "Arial", sans-serif;
   font-size: 36px;
   color: #bf0000;
-  margin: 60px 0 92px;
+  margin: 58px 0 90px;
 }
 
 .services__list {
@@ -321,16 +320,14 @@ img {
 }
 
 .services__text {
-  margin: 50px 0;
   display: flex;
   align-items: center;
-  font-family: "Muller", "Arial", sans-serif;
   font-size: 18px;
   color: #000000;
 }
 
 .popular__title {
-  margin: 92px 0;
+  margin: 80px 0;
   font-family: "Muller", "Arial", sans-serif;
   font-size: 36px;
   color: #bf0000;
@@ -361,7 +358,7 @@ img {
 .popular__picture {
   display: block;
   width: 200px;
-  min-height: 165px;
+  height: 165px;
   margin: 0 auto;
 }
 
@@ -375,21 +372,24 @@ img {
 }
 
 .popular__desc {
+  margin-top: 37px;
   margin-left: 24px;
+  width: 318px;
   min-height: 195px;
 }
 
 .popular__desc-item {
+  display: block;
   font-family: "Geometria", "Arial", sans-serif;
   font-size: 16px;
   color: #13151b;
-  display: block;
 }
 
 .popular__link {
   display: block;
   width: 255px;
   min-height: 58px;
+  margin: 40px auto;
   font-family: "Geometria", "Arial", sans-serif;
   font-size: 16px;
   color: #ffffff;
@@ -398,6 +398,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
+}
+
+.popular__link:hover {
+  width: 270px;
+  transform: scale(1.15, 1.15);
 }
 
 .popular__arrow {
@@ -409,26 +415,25 @@ img {
 
 .popular__arrow::before {
   content: "";
-  width: 100px;
+  width: 40px;
   height: 2px;
   background-color: #ffffff;
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 6px;
 }
 
 .popular__arrow::after {
   content: "";
   display: block;
-  width: 0;
-  height: 0;
-  border: 5px solid #ffffff;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
+  width: 5px;
+  height: 5px;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   position: absolute;
-  right: 0;
+  right: -20px;
   top: 3px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 .footer__top {
@@ -450,18 +455,29 @@ img {
 }
 
 .footer__bottom {
-  width: 1920px;
-  min-height: 79px;
-  background-color: #e8e8e8;
+  margin: 0;
 }
 
 .footer__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
-  
   width: 1645px;
+  padding: 17px 0;
+}
+
+.footer__info::after {
+  content: "";
+  display: block;
+  width: 1920px;
+  min-height: 90px;
+  position: absolute;
+  top: 0;
+  right: -136px;
+  background-color: #e8e8e8;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
 .footer__copyright {
@@ -495,6 +511,18 @@ img {
 display: block;
 width: 41px;
 min-height: 41px;
+}
+
+.arrowup {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 135px;
+  right: 83px;
+  background: url("../images/upstairs.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
