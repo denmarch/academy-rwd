@@ -255,7 +255,6 @@ img {
 .banner {
   display: flex;
   align-items: center;
-  width: 1920px;
   min-height: 802px;
   background: url("../images/banner_big.jpg");
   background-repeat: no-repeat;
@@ -271,7 +270,6 @@ img {
 .services__title {
   display: flex;
   align-items: center;
-  font-family: "Muller", "Arial", sans-serif;
   font-size: 36px;
   color: #bf0000;
   margin: 58px 0 90px;
@@ -434,19 +432,12 @@ img {
   transform: rotate(-45deg);
 }
 
-.footer {
-  margin: 0 auto;
-  padding: 0;
-}
-
-.footer__top {
+.footer__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1645px;
   margin: 0;
-  padding: 35px 0;
-
+  padding: 30px 0;
   border-top: 1px solid #d1d1d1;
 }
 
@@ -462,28 +453,13 @@ img {
 .footer__bottom {
   background-color: #e8e8e8;
   background-size: cover;
-
 }
 
 .footer__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1645px;
-  padding: 17px 0;
 }
-
-/*.footer__info::after {
-  content: "";
-  display: block;
-  width: 1920px;
-  min-height: 90px;
-  position: absolute;
-  top: 0;
-  right: -136px;
-  background-color: #e8e8e8;
-  z-index: -1;
-}*/
 
 .footer__copyright {
   font-family: "Geometria", "Arial", sans-serif;
@@ -494,7 +470,6 @@ img {
 .footer__creation-block {
   display: flex;
   align-items: center;
-  margin: 0;
 }
 
 .footer__creation {
@@ -513,9 +488,9 @@ img {
 }
 
 .footer__creation-logo{
-display: block;
-width: 41px;
-min-height: 41px;
+  display: block;
+  width: 41px;
+  min-height: 41px;
 }
 
 .arrowup {
@@ -523,8 +498,8 @@ min-height: 41px;
   width: 50px;
   height: 50px;
   position: fixed;
-  bottom: 135px;
-  right: 83px;
+  bottom: 112px;
+  right: 80px;
   background: url("../images/upstairs.png");
   background-repeat: no-repeat;
   background-position: center;
