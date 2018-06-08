@@ -127,7 +127,6 @@ img {
 }
 
 .header__callme-btn {
-  padding-left: -5px;
   border: 0;
   background-color: transparent;
   text-decoration: underline;
@@ -169,7 +168,6 @@ img {
 }
 
 .header__cart-link {
-  font-style: "Geometria", "Arial", sans-serif;
   font-size: 12px;
   color: #fbf4f4;
   text-decoration: none;
@@ -177,7 +175,6 @@ img {
   width: 42px;
   height: 42px;
   background-image: url("../images/cart.png");
-  background-color: ;
   background-repeat: no-repeat;
   background-position: center;
 }
