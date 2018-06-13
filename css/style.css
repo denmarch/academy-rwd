@@ -26,8 +26,6 @@
    src: url("../fonts/ofont-ru-muller.woff2") format("woff2"), url("../fonts/ofont-ru-muller.woff") format("woff");
 }
 
-/*@media*/
-
 body {
   font-family: "Muller", "Arial", sans-serif;
   font-size: 18px;
@@ -543,13 +541,59 @@ img {
   .popular__item {
     width: 24%;
   }
+
+  .header__top {
+    flex-wrap: wrap;
+  }
+
+@media screen and (max-width: 1000px) {         /*!!!!!!!!!!!!! надо ли*/
+  .container {
+    width: 100%;
+  }
+  .header__top {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  
+}
+
+@media screen and (max-width: 880px) {
+  .banner__title {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .services__list {
+    flex-wrap: wrap;
+  }
+  .services__item {
+    width: 50%;
+  }
+
+@media screen and (max-width: 1336px) {
+  .services__list {
+    flex-wrap: wrap;
+  }
+  .services__item {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 932px) {
+    .services__list {
+      flex-wrap: wrap;
+    }
+    .services__item {
+      width: 100%;
+    }
 }
 
 @media screen and (max-width: 1280px) {
   .popular__list {
     flex-wrap: wrap;
   }
-
   .popular__item {
     width: 31%;
     margin-bottom: 30px;
@@ -567,4 +611,17 @@ img {
   .popular__item {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 1060px) {
+  .footer__list {
+    flex-wrap: wrap;
+  }
+  .navigation {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+
 }
